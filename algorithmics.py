@@ -50,7 +50,7 @@ class AlgorithmicsTest:
         return outputVar
                 
     def get_test_list_len(self):
-        print("\nA continuación, ingrese el tamaño de la lista de evaluación\nNota: Dejar en blanco si desea ingresar una lista libre\n")
+        print("\nIngrese el tamaño de la lista de evaluación\nNota: Dejar en blanco si desea ingresar una lista libre\n")
         
         while (not self.__check_flag and self.__check_input_counter):
             test_list_len = self.__check_input()
@@ -60,7 +60,7 @@ class AlgorithmicsTest:
         return test_list_len
     
     def get_test_list(self, quantity = 0):
-        print("\nA continuación, ingrese la lista de evaluación\nNota: Debe igresar números enteros separados con un espacio simple\n")
+        print("\nIngrese la lista de evaluación\nNota: Debe igresar números enteros separados con un espacio simple\n")
         
         while (not self.__check_flag and self.__check_input_counter):
             test_list = self.__check_input(type = 'list', listLength = quantity)
@@ -70,7 +70,7 @@ class AlgorithmicsTest:
         return test_list
     
     def get_query_list_len(self):
-        print("\nA continuación, ingrese el tamaño de la lista de consultas\nNota: Dejar en blanco si desea ingresar una lista libre\n")
+        print("\nIngrese el tamaño de la lista de consultas\nNota: Dejar en blanco si desea ingresar una lista libre\n")
         
         while (not self.__check_flag and self.__check_input_counter):
             query_list_len = self.__check_input()
@@ -80,7 +80,7 @@ class AlgorithmicsTest:
         return query_list_len
     
     def get_query_list(self, quantity = 0):
-        print("\nA continuación, ingrese la lista de consultas\nNota: Debe igresar números enteros separados con un espacio simple\n")
+        print("\nIngrese la lista de consultas\nNota: Debe igresar números enteros separados con un espacio simple\n")
         
         while (not self.__check_flag and self.__check_input_counter):
             query_list = self.__check_input(type = 'list', listLength = quantity)
