@@ -16,7 +16,9 @@ class AlgorithmicsTest:
         print(PCOLORS.FAIL+msg)
         print(f"{self.__check_input_counter} intento{'s' if self.__check_input_counter!=1 else ''} restante{'s' if self.__check_input_counter!=1 else ''}\n")
         
-        if not self.__check_input_counter: exit()
+        if not self.__check_input_counter: 
+            print(PCOLORS.RESET, end="")
+            exit()
     
     def __check_input(self, type='int', listLength = None): 
         inputVar = input(PCOLORS.BOLD+"Entrada: ").strip()
@@ -118,8 +120,6 @@ class AlgorithmicsTest:
         return borders
         
     def exec(self):
-        print(PCOLORS.RESET, end="")
-        
         test_list_len = self.get_test_list_len()
         test_list = self.get_test_list(quantity = test_list_len if test_list_len else None)
         
@@ -128,5 +128,8 @@ class AlgorithmicsTest:
         
         bordersList = self.check_borders(test_list, query_list)
         
+        print(PCOLORS.OKGREEN)
         for b0, b1 in bordersList:
             print(b0, b1)
+            
+        print(PCOLORS.RESET, end="")
